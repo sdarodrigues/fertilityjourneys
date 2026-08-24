@@ -122,7 +122,7 @@ h2{
   font-size:clamp(31px,4vw,48px);
   line-height:.98;
   letter-spacing:-.04em;
-  font-weight:500;
+  font-weight:400;
 }
 .two{
   display:grid;
@@ -155,10 +155,10 @@ p{font-size:17px;margin:0 0 19px;color:#242424}
   margin:18px 0 16px;
   font-family:var(--display);
   font-size:22px;
-  font-weight:500;
+  font-weight:700;
 }
 ul{margin:0;padding-left:19px}
-li{margin:7px 0;font-size:16px}
+li{margin:7px 0;font-size:16px;font-weight:400}
 .dates{border-top:1px solid var(--line)}
 .date{
   display:grid;
@@ -169,6 +169,9 @@ li{margin:7px 0;font-size:16px}
   font-size:16px;
 }
 .date strong{font-weight:600}
+.date span {
+  font-weight: 400;
+}
 .cta{
   background:#eeece8;
   padding:68px 7%;
@@ -188,6 +191,35 @@ li{margin:7px 0;font-size:16px}
   font-weight:700;
   letter-spacing:.02em;
 }
+.contact-details{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px 34px;
+}
+
+.contact-details p{
+  margin:0;
+}
+
+.contact-details a{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:var(--ink);
+  text-decoration:none;
+}
+
+.contact-details a:hover{
+  text-decoration:underline;
+}
+
+.contact-icon{
+  width:21px;
+  height:21px;
+  flex:0 0 21px;
+  color:initial;
+}
+
 .funding{
   padding:34px 7% 30px;
   border-top:1px solid var(--line);
@@ -339,9 +371,10 @@ html,body,.page,main,section,footer{background:var(--paper)!important;}
 </div>
 <div class="card">
 <h3>Accepted media</h3>
+Up to two works in any of the following:
 <ul>
 <li>Painting</li><li>Photography</li><li>Drawing</li><li>Printmaking</li>
-<li>Sculpture</li><li>Textile art</li><li>Mixed media</li><li>Video or short film</li>
+<li>Sculpture</li><li>Textile art</li><li>Mixed media</li><li>Video or short film</li><li>Poetry</li><li>Short story</li>
 </ul>
 <h3>Size restrictions</h3>
 <ul>
@@ -399,16 +432,43 @@ London, NW10 6DU<br/><br/>
 <h2>Before you apply</h2>
 <div class="cards">
 <div class="card">
-<h3>Submission &amp; commitment</h3>
-<p><strong>Submission format:</strong> Submission is through a Google form which requires a Google account. If you don't have a Google account please complete the form and send your application to....</p>
-<p><strong>Entry fee:</strong> There is no entry free.</p>
-<p><strong>Commitment:</strong> You will make new work that you must be able to deliver and deinstall in person.
-      All work needs to be delivered by Saturday [date to be confirmed].</p>
+<h3>Submission</h3>
+<ul>
+<li>Submission is through a Google form which requires a Google account. If you do not have a Google account, please complete the questions in the form and send a pdf of your application to fertility.journeys.uk@gmail.com</li>
+</ul>
+<h3>Selection criteria</h3>
+<ul>
+<li>A selection committee of five jury members will select the works for the exhibition.</li>
+<li>Selection will be conducted blind, with identifying information about artists withheld from the committee during the initial review.</li>
+<li>Selection will be based on the work’s thematic relevance to the exhibition, as well as its suitability in terms of scale and dimensions for display within the gallery.</li>
+<li>The committee will comprise practising artists, gallery staff and individuals with lived experience of subfertility.</li>
+<li>The committee will bring together artistic, curatorial and lived-experience perspectives.</li>
+</ul>
+<h3>Commitment</h3>
+<ul>
+<li> All work will need to be delivered on Saturday 14th of November between 10am and 2pm. </li>
+<li> All work will need to be collected on Sunday 29th of November</li>
+<li> You will be asked to help with 1 to 2 half days of invigilation</li>
+</ul>
 </div>
 <div class="card">
-<h3>Costs &amp; insurance</h3>
-<p><strong>Costs:</strong> This is a self-funded, not-for-profit project.</p>
-<p><strong>Insurance:</strong> [Details to be confirmed]</p>
+<h3>Our support</h3>
+<ul>
+<li> Installation</li>
+<li> Promotion</li>
+<li> Publication of small exibition catalogue.</li>
+</ul>
+<h3>Costs</h3>
+<ul>
+<li>This is a self-funded, not-for-profit project.</li>
+<li>There is no fee to participate in this exhibition.</li>
+<li>No commissions are taken for any sales you may make. </li>
+</ul>
+<h3>Insurance</h3>
+<ul>
+<li>You will be required to have your own public liability insurance and artist insurance.
+<li> You will be asked to complete a short risk assessment for the Gallery.</li>
+</ul>
 </div>
 </div>
 </section>
@@ -418,9 +478,80 @@ London, NW10 6DU<br/><br/>
 <p><strong>Help us tell the stories that deserve to be seen.</strong></p>
 <p>For full submission guidelines and application details, please visit:</p>
 <a class="button" href="#" onclick="return false;">[Insert website]</a>
-<p style="font-size:14px;margin-top:22px"><strong>Contact:</strong> [Insert email address]</p>
+<p style="font-size:14px;margin-top:22px"></p>
+</section>
+<section class="section contacts" aria-label="Contact">
+  <div class="eyebrow">CONTACT</div>
+  <h2>Get in touch</h2>
+ <p> If you have any questions or would like to discuss any aspect of the open call please get in touch.</p>
+  <div class="contact-details">
+    <p>
+      <a href="mailto:fertility.journeys.uk@gmail.com" aria-label="Email">
+        <svg class="contact-icon email-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="5" width="18" height="14" rx="1.5"
+                fill="none" stroke="#1d2d66" stroke-width="1.8"/>
+          <path d="M4 7l8 6 8-6"
+                fill="none" stroke="#1d2d66" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>fertility.journeys.uk@gmail.com</span>
+      </a>
+    </p>
+
+    <p>
+      <a href="https://www.instagram.com/_fertilityjourneys_/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Instagram">
+
+        <svg class="contact-icon instagram-icon"
+             viewBox="0 0 24 24"
+             aria-hidden="true"
+             focusable="false">
+
+          <defs>
+            <linearGradient id="instagram-gradient"
+                            x1="0%"
+                            y1="100%"
+                            x2="100%"
+                            y2="0%">
+              <stop offset="0%" stop-color="#F58529"/>
+              <stop offset="35%" stop-color="#DD2A7B"/>
+              <stop offset="65%" stop-color="#8134AF"/>
+              <stop offset="100%" stop-color="#515BD4"/>
+            </linearGradient>
+          </defs>
+
+          <rect x="3" y="3"
+                width="18"
+                height="18"
+                rx="5"
+                fill="none"
+                stroke="url(#instagram-gradient)"
+                stroke-width="1.8"/>
+
+          <circle cx="12"
+                  cy="12"
+                  r="4.2"
+                  fill="none"
+                  stroke="url(#instagram-gradient)"
+                  stroke-width="1.8"/>
+
+          <circle cx="17.3"
+                  cy="6.8"
+                  r="1.1"
+                  fill="#DD2A7B"/>
+
+        </svg>
+
+        <span>@_fertilityjourneys_</span>
+      </a>
+    </p>
+
+  </div>
 </section>
 <section aria-label="Funding" class="funding">
+<p>This exhibition is supported by Imperial College London</p>
 <div class="funding-label">FUNDING</div>
 <div class="funding-logos">
 <img alt="Imperial logo" class="imperial" src="IMPERIAL_logo_RGB_Blue_safe_area_2024.png"/>
