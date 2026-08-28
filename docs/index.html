@@ -314,6 +314,58 @@ html,body,.page,main,section,footer{background:var(--paper)!important;}
   background:transparent!important;
 }
 </style>
+
+<style id="mobile-hero-fix">
+@media (max-width: 480px){
+  .hero{
+    min-height:0!important;
+    height:auto!important;
+    padding:44px 7% 90px!important;
+    overflow:hidden!important;
+  }
+
+  .hero-copy{
+    position:relative!important;
+    left:auto!important;
+    top:auto!important;
+    width:100%!important;
+    max-width:none!important;
+    z-index:3!important;
+  }
+
+  .hero-dandelion{
+    top:115px!important;
+    right:-72%!important;
+    width:auto!important;
+    height:125%!important;
+    max-width:none!important;
+    object-fit:contain!important;
+    object-position:right top!important;
+    z-index:1!important;
+  }
+
+  .hero .lead{
+    position:relative!important;
+    z-index:4!important;
+    max-width:100%!important;
+    padding:8px 10px!important;
+    margin-left:-10px!important;
+    margin-right:-10px!important;
+    background:rgba(243,241,238,.94)!important;
+  }
+
+  .hero .manifesto{
+    position:relative!important;
+    z-index:4!important;
+    max-width:100%!important;
+    padding:19px 10px 0!important;
+    margin-left:-10px!important;
+    margin-right:-10px!important;
+    background:rgba(243,241,238,.94)!important;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="page">
